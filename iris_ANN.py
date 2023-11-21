@@ -36,7 +36,7 @@ y_val = one_hot_encode(y_val, num_classes)
 
 # Create the model
 model = keras.Sequential()
-model.add(keras.layers.Dense(6, activation='relu', use_bias=True, bias_initializer="zeros", input_shape=(4,))) # 2 hidden nodes
+model.add(keras.layers.Dense(6, activation='relu', use_bias=True, bias_initializer="zeros", input_shape=(4,))) # 6 hidden nodes
 model.add(keras.layers.Dense(3, activation='softmax')) # 3 output nodes
 model.summary()
 
